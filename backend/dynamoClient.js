@@ -4,7 +4,7 @@ import { getDynamoDBConfig } from "../config/dynamoConfig.js";
 
 const ddbClient = new DynamoDBClient(getDynamoDBConfig());
 
-const docClient = DynamoDBDocumentClient.from(ddbClient, {
+export const docClient = DynamoDBDocumentClient.from(ddbClient, {
     marshallOptions: {
         removeUndefinedValues: true,
         convertEmptyValues: false,

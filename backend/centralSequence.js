@@ -24,8 +24,6 @@ import session from 'express-session';
 console.log("Session");
 import fs from 'fs';
 console.log("Fs");
-import serverless from 'serverless-http';
-console.log("Serverless-http");
 console.log("Custom imports");
 import auth from './authentication/authenticateMethods.js';
 console.log("Authenticate meth");
