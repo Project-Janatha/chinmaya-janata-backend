@@ -452,13 +452,11 @@ app.post('/addevent', async (req, res) => {
 //Different features I'm on the fence about will be around here, so you can always flip this boolean if you think I should do whatever the feature is around here.
 const SAHANAV_SHOULD_IMPLEMENT_FEATURE = false;
 
-// console.log("Moving to listening area");
-// app.listen(PORT, (err) => {
-//     if(err)
-//     {
-//         console.error(err);
-//     }
-//     console.log(`Server is running on port ${PORT}`);
-// });
-
-export const handler = serverless(app);
+console.log("Moving to listening area");
+app.listen(PORT, (err) => {
+    if(err)
+    {
+        console.error(err);
+    }
+    console.log(`Server is running on port ${PORT}`);
+});
